@@ -4,7 +4,7 @@ import "./sty.css"
 import { Store } from "./Datacompo"
 
 function Food(){
-    const data1=useContext(Store)
+    const [data1]=useContext(Store)
 
     return(     
        
@@ -12,7 +12,7 @@ function Food(){
         <div className="mainb">
         <div className="b1">
            <div className="b3">Food</div> 
-           {data1.data.map((item)=>{
+           {data1.map((item)=>{
             if(item.level==="medium" && item.catageory==="food")
                 return(
             <>
@@ -36,7 +36,7 @@ function Food(){
         <div className="b8">
             Top Posts
         </div>
-        {data1.data.map((item)=>{
+        {data1.map((item)=>{
             if(item.level==="maintop5")
             return(
         <>
@@ -52,7 +52,7 @@ function Food(){
         })}
         
         
-        {data1.data.map((item)=>{
+        {data1.map((item)=>{
             if(item.level==="top" && item.catageory==="food")
                 return(
                     

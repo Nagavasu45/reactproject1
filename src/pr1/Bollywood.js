@@ -17,7 +17,7 @@ function Bollywood(){
     <div className="mainb">
     <div className="b1">
        <div className="b3">Bollywood</div> 
-       {data1.data.map((item)=>{
+       {data1.map((item)=>{
         if(item.level==="medium" && item.catageory==="bolly")
             return(
         <>
@@ -41,7 +41,7 @@ function Bollywood(){
     <div className="b8">
         Top Posts
     </div>
-    {data1.data.map((item)=>{
+    {data1.map((item)=>{
         if(item.level==="maintop1")
         return(
     <>
@@ -57,7 +57,7 @@ function Bollywood(){
     })}
     
     
-    {data1.data.map((item)=>{
+    {data1.map((item)=>{
         if(item.level==="top" && item.catageory==="bolly")
             return(
                 

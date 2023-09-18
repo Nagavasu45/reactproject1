@@ -2,7 +2,7 @@ import React, { useContext } from "react"
 import { Store } from "./Datacompo"
 import "./sty.css"
 function Hollywood(){
-    const data1=useContext(Store)
+    const [data1]=useContext(Store)
     return(       
 
        
@@ -10,7 +10,7 @@ function Hollywood(){
         <div className="mainb">
         <div className="b1">
            <div className="b3">Hollywood</div> 
-           {data1.data.map((item)=>{
+           {data1.map((item)=>{
             if(item.level==="medium" && item.catageory==="holly")
             
                 return(
@@ -35,7 +35,7 @@ function Hollywood(){
         <div className="b8">
             Top Posts
         </div>
-        {data1.data.map((item)=>{
+        {data1.map((item)=>{
             if(item.level==="maintop3")
             return(
         <>
@@ -51,7 +51,7 @@ function Hollywood(){
         })}
         
         
-        {data1.data.map((item)=>{
+        {data1.map((item)=>{
             if(item.level==="top" && item.catageory==="holly")
             // if(item.id%15===0)
                 return(

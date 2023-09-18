@@ -10,7 +10,7 @@ function Fitness(){
         <div className="mainb">
         <div className="b1">
            <div className="b3">Fitness</div> 
-           {data1.data.map((item)=>{
+           {data1.map((item)=>{
             if(item.level==="medium" && item.catageory==="fitness")
                 return(
             <>
@@ -34,7 +34,7 @@ function Fitness(){
         <div className="b8">
             Top Posts
         </div>
-        {data1.data.map((item)=>{
+        {data1.map((item)=>{
             if(item.level==="maintop4")
             return(
         <>
@@ -50,7 +50,7 @@ function Fitness(){
         })}
         
         
-        {data1.data.map((item)=>{
+        {data1.map((item)=>{
             if(item.level==="top" && item.catageory==="fitness")
                 return(
                     

@@ -4,7 +4,7 @@ import React, { useContext } from "react"
 import "./sty.css"
 import { Store } from "./Datacompo"
 function Technology(){
-    const data1=useContext(Store)
+    const [data1]=useContext(Store)
     return(       
 
        
@@ -12,7 +12,7 @@ function Technology(){
         <div className="mainb">
         <div className="b1">
            <div className="b3">Technology</div> 
-           {data1.data.map((item)=>{
+           {data1.map((item)=>{
             if(item.level==="medium" && item.catageory==="tech")
                 return(
             <>
@@ -36,7 +36,7 @@ function Technology(){
         <div className="b8">
             Top Posts
         </div>
-        {data1.data.map((item)=>{
+        {data1.map((item)=>{
             if(item.level==="maintop2")
             return(
         <>
@@ -52,7 +52,7 @@ function Technology(){
         })}
         
         
-        {data1.data.map((item)=>{
+        {data1.map((item)=>{
             if(item.level==="top" && item.catageory==="tech")
                 return(
                     
