@@ -826,7 +826,7 @@ function Mainroute(){
         <div className="one">
         <div className="four">
             <div className="five">The</div>
-            <h1>Siren</h1>
+            <div className="t1"><h1>Siren</h1></div>
         </div>
         <BrowserRouter>
         <div className="two">
